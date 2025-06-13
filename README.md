@@ -1,5 +1,7 @@
 # Roadmap.sh Random GitHub Repository Finder
 
+[Project URL](https://roadmap.sh/projects/github-random-repo)
+
 This project is an integration for [roadmap.sh](https://roadmap.sh) that allows users to discover a random GitHub repository using the GitHub Search API. It provides a fun and interactive way for developers to explore open-source projects and expand their knowledge.
 
 ## Features
@@ -46,7 +48,6 @@ This project is an integration for [roadmap.sh](https://roadmap.sh) that allows 
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for improvements and new features.
-
 
 ---
 
