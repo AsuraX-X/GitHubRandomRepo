@@ -49,9 +49,16 @@ renderRepo = (repo) => {
 
 const getRepo = async (language) => {
   try {
-    const res = await fetch(
-      `https://api.github.com/search/repositories?q=language:${language}&sort=stars&order=desc`
-    );
+    let res;
+    if (language) {
+      res = await fetch(
+        `https://api.github.com/search/repositories?q=language:${language}`
+      );
+    } else {
+      res = await fetch(
+        `https://api.github.com/search/repositories?q=is:public`
+      );
+    }
     const data = await res.json();
     const randRepo = data.items[Math.floor(Math.random() * data.items.length)];
     console.log(randRepo);
@@ -71,8 +78,7 @@ let language = "";
 
 const handleLangChange = () => {
   content.innerHTML = "<p class='text-center'>Loading...</p>";
-  if (!langSelector.value)
-    content.innerHTML = "<p class='text-center'>Please select a language<p>";
+  button.innerHTML = "";
   language = langSelector.value;
   console.log(language);
   getRepo(language);
