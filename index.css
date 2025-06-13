@@ -1,0 +1,129 @@
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: solid 0.1rem #646464;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+}
+
+.select-lang {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  min-height: 15rem;
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.text-center {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.refresh-btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.retry-btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  background-color: #e03131;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.max-size {
+  height: 100%;
+  width: 100%;
+}
+
+.repo {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.icon {
+  margin-right: 0.4rem;
+  color: #545454;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+.description {
+  width: 26rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error {
+  display: flex;
+  height: 15rem;
+  width: 100%;
+  background-color: #ffc9c9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5%;
+}
